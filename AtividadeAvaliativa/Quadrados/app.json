@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "01-overview-react-components",
-    "slug": "01-overview-react-components",
+    "name": "Quadrados",
+    "slug": "Alinhar Quadrados",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

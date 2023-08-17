@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "01-overview-react-components",
-    "slug": "01-overview-react-components",
+    "name": "Treinos",
+    "slug": "Treinos semanais",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -29,5 +29,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
+
   }
 }

@@ -64,9 +64,65 @@ export default function App() {
         </View>
 
       </View>
+
+      <View style={styles.weeklySessions}>
+        <Text style={styles.weeklySessions.text}>Seções por semana</Text>
+
+        <View style={styles.weeklySessions.sessions}>
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttons} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>1</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttons} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>2</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttons} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>3</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttons} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>4</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttons} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>5</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttons} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>6</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      <View style={styles.weeklySessions}>
+        <Text style={styles.weeklySessions.text}>Duração do treino</Text>
+
+        <View style={styles.weeklySessions.sessions}>
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttonDuration} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>15</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttonDuration} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>20</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttonDuration} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>25</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.weeklySessions.sessions.buttonDuration} onPress={onPress}>
+            <Text style={styles.weeklySessions.sessions.buttons.text}>30</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      <TouchableOpacity style={styles.start} onPress={onPress}>
+        <Text style={styles.start.text}>Iniciar Treino</Text>
+      </TouchableOpacity>
+
     </View>
-  );
-}
+);}
 
 const styles = StyleSheet.create({
   container: { // Tela do celular
@@ -106,22 +162,26 @@ const styles = StyleSheet.create({
       }
     }
   },
-
-  containerImages: {
+  
+  containerImages: { // Container de imagens
     width: '100%',
     height: '50%',
+    maxHeight: '350px',
+    minHeight: '325px', 
     marginTop: '20px',
     borderWidth: '1.9px',
-    borderRadius: '15px',
+    borderRadius: '20px',
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
     gap: '15px',
 
     line1: {
       width: '100%',
       height: '45%',
       display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       flexDirection: 'row',
       gap: '15px'
     },
@@ -130,6 +190,8 @@ const styles = StyleSheet.create({
       width: '100%',
       height: '45%',
       display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       flexDirection: 'row',
       gap: '15px'
     },
@@ -150,7 +212,69 @@ const styles = StyleSheet.create({
       width: '85%',
       height: '85%',
     }
+  },
+
+  weeklySessions: { // Sessões por semana e duração dos treinos
+    width: '100%',
+
+
+    text: {
+      fontSize: '18px',
+      fontWeight: '500'
+    },
+
+    sessions: {
+      width: '100%',
+      marginTop: '5px',
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+
+      buttons: {
+        height: '30px',
+        width: '30px',
+        backgroundColor: 'rgba(0, 0, 255, 0.07)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: 'rgba(0, 0, 255, 0.4)',
+        borderWidth: '1.7px',
+        borderRadius: '5px',
+
+        text: {
+          fontWeight: '500',
+          fontSize: '15px',
+        }
+      },
+
+      buttonDuration: {
+        height: '30px',
+        width: '60px',
+        backgroundColor: 'rgba(0, 0, 255, 0.07)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: 'rgba(0, 0, 255, 0.4)',
+        borderWidth: '1.7px',
+        borderRadius: '5px',
+      }
+    }
+  },
+
+  start: {
+    width: '100%',
+    marginTop: '15px',
+    backgroundColor: 'rgba(0, 0, 255, 0.07)',
+    textAlign: 'center',
+    borderWidth: '1.7px',
+    borderColor: 'rgba(0, 0, 255, 0.4)',
+    borderRadius: '8px',
+
+    text: {
+      fontSize: '18px',
+    }
   }
+
 
 
 
